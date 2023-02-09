@@ -34,13 +34,8 @@ license {
     // large-scale-change unable to identify any license_text files
 }
 
-display_go_defaults_sm7250 {
-    name: "display_go_defaults",
-}
-
 cc_defaults {
     name: "display_defaults",
-    defaults: ["display_go_defaults"],
     cflags: [
         "-Wno-missing-field-initializers",
         "-Wconversion",
@@ -58,7 +53,6 @@ cc_defaults {
 
 cc_library_headers {
     name: "debug_headers",
-    defaults: ["display_go_defaults"],
     vendor: true,
     export_include_dirs: [
         "libdebug",
@@ -67,7 +61,6 @@ cc_library_headers {
 
 cc_library_headers {
     name: "display_headers",
-    defaults: ["display_go_defaults"],
     vendor: true,
     export_include_dirs: [
         "include",
