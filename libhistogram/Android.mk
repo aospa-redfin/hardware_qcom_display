@@ -22,6 +22,7 @@ LOCAL_LICENSE_CONDITIONS := notice
 LOCAL_VENDOR_MODULE := true
 LOCAL_MODULE_TAGS := optional
 LOCAL_HEADER_LIBRARIES := display_headers
+LOCAL_HEADER_LIBRARIES += qti_kernel_headers
 LOCAL_SHARED_LIBRARIES := libdrm liblog libcutils libutils libbase
 LOCAL_C_INCLUDES          := $(kernel_includes) \
                              -isystem external/libdrm

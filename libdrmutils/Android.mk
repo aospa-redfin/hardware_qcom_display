@@ -12,6 +12,7 @@ LOCAL_MODULE_TAGS             := optional
 LOCAL_C_INCLUDES              := external/libdrm \
                                  $(kernel_includes)
 LOCAL_HEADER_LIBRARIES        := display_headers
+LOCAL_HEADER_LIBRARIES        += qti_kernel_headers
 LOCAL_SHARED_LIBRARIES        := libdrm libdl libdisplaydebug
 LOCAL_CFLAGS                  := -DLOG_TAG=\"DRMUTILS\" -Wall -Werror -fno-operator-names
 LOCAL_CFLAGS                  += $(common_flags)

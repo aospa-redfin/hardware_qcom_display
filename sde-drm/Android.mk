@@ -12,6 +12,7 @@ LOCAL_SANITIZE            := integer_overflow
 LOCAL_MODULE_TAGS         := optional
 LOCAL_SHARED_LIBRARIES    := libdrm libdrmutils libdisplaydebug libcutils
 LOCAL_HEADER_LIBRARIES    := display_headers
+LOCAL_HEADER_LIBRARIES    += qti_kernel_headers
 LOCAL_C_INCLUDES          := $(kernel_includes) \
                              -isystem external/libdrm
 LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
